@@ -1,0 +1,2814 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "github-advanced-search",
+  "title": "GitHub Advanced Search",
+  "description": "Searches GitHub using advanced options",
+  "icon": "icon.png",
+  "author": "Piers",
+  "categories": [
+    "Developer Tools"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "GitHub Advanced Search",
+      "description": "Template for submitting a form",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "defaultLanguage",
+      "type": "dropdown",
+      "description": "Set the default language.",
+      "required": false,
+      "title": "Default Language",
+      "default": "Javascript",
+      "data": [
+        {
+          "value": "1C Enterprise",
+          "title": "1C Enterprise"
+        },
+        {
+          "value": "2-Dimensional Array",
+          "title": "2-Dimensional Array"
+        },
+        {
+          "value": "4D",
+          "title": "4D"
+        },
+        {
+          "value": "ABAP CDS",
+          "title": "ABAP CDS"
+        },
+        {
+          "value": "ABAP",
+          "title": "ABAP"
+        },
+        {
+          "value": "ABNF",
+          "title": "ABNF"
+        },
+        {
+          "value": "AGS Script",
+          "title": "AGS Script"
+        },
+        {
+          "value": "AIDL",
+          "title": "AIDL"
+        },
+        {
+          "value": "AL",
+          "title": "AL"
+        },
+        {
+          "value": "AMPL",
+          "title": "AMPL"
+        },
+        {
+          "value": "ANTLR",
+          "title": "ANTLR"
+        },
+        {
+          "value": "API Blueprint",
+          "title": "API Blueprint"
+        },
+        {
+          "value": "APL",
+          "title": "APL"
+        },
+        {
+          "value": "ASL",
+          "title": "ASL"
+        },
+        {
+          "value": "ASN.1",
+          "title": "ASN.1"
+        },
+        {
+          "value": "ASP.NET",
+          "title": "ASP.NET"
+        },
+        {
+          "value": "ATS",
+          "title": "ATS"
+        },
+        {
+          "value": "ActionScript",
+          "title": "ActionScript"
+        },
+        {
+          "value": "Ada",
+          "title": "Ada"
+        },
+        {
+          "value": "Adblock Filter List",
+          "title": "Adblock Filter List"
+        },
+        {
+          "value": "Adobe Font Metrics",
+          "title": "Adobe Font Metrics"
+        },
+        {
+          "value": "Agda",
+          "title": "Agda"
+        },
+        {
+          "value": "Alloy",
+          "title": "Alloy"
+        },
+        {
+          "value": "Alpine Abuild",
+          "title": "Alpine Abuild"
+        },
+        {
+          "value": "Altium Designer",
+          "title": "Altium Designer"
+        },
+        {
+          "value": "AngelScript",
+          "title": "AngelScript"
+        },
+        {
+          "value": "Ant Build System",
+          "title": "Ant Build System"
+        },
+        {
+          "value": "Antlers",
+          "title": "Antlers"
+        },
+        {
+          "value": "ApacheConf",
+          "title": "ApacheConf"
+        },
+        {
+          "value": "Apex",
+          "title": "Apex"
+        },
+        {
+          "value": "Apollo Guidance Computer",
+          "title": "Apollo Guidance Computer"
+        },
+        {
+          "value": "AppleScript",
+          "title": "AppleScript"
+        },
+        {
+          "value": "Arc",
+          "title": "Arc"
+        },
+        {
+          "value": "AsciiDoc",
+          "title": "AsciiDoc"
+        },
+        {
+          "value": "AspectJ",
+          "title": "AspectJ"
+        },
+        {
+          "value": "Assembly",
+          "title": "Assembly"
+        },
+        {
+          "value": "Astro",
+          "title": "Astro"
+        },
+        {
+          "value": "Asymptote",
+          "title": "Asymptote"
+        },
+        {
+          "value": "Augeas",
+          "title": "Augeas"
+        },
+        {
+          "value": "AutoHotkey",
+          "title": "AutoHotkey"
+        },
+        {
+          "value": "AutoIt",
+          "title": "AutoIt"
+        },
+        {
+          "value": "Avro IDL",
+          "title": "Avro IDL"
+        },
+        {
+          "value": "Awk",
+          "title": "Awk"
+        },
+        {
+          "value": "BASIC",
+          "title": "BASIC"
+        },
+        {
+          "value": "Ballerina",
+          "title": "Ballerina"
+        },
+        {
+          "value": "Batchfile",
+          "title": "Batchfile"
+        },
+        {
+          "value": "Beef",
+          "title": "Beef"
+        },
+        {
+          "value": "Befunge",
+          "title": "Befunge"
+        },
+        {
+          "value": "Berry",
+          "title": "Berry"
+        },
+        {
+          "value": "BibTeX",
+          "title": "BibTeX"
+        },
+        {
+          "value": "Bicep",
+          "title": "Bicep"
+        },
+        {
+          "value": "Bikeshed",
+          "title": "Bikeshed"
+        },
+        {
+          "value": "Bison",
+          "title": "Bison"
+        },
+        {
+          "value": "BitBake",
+          "title": "BitBake"
+        },
+        {
+          "value": "Blade",
+          "title": "Blade"
+        },
+        {
+          "value": "BlitzBasic",
+          "title": "BlitzBasic"
+        },
+        {
+          "value": "BlitzMax",
+          "title": "BlitzMax"
+        },
+        {
+          "value": "Bluespec",
+          "title": "Bluespec"
+        },
+        {
+          "value": "Boo",
+          "title": "Boo"
+        },
+        {
+          "value": "Boogie",
+          "title": "Boogie"
+        },
+        {
+          "value": "Brainfuck",
+          "title": "Brainfuck"
+        },
+        {
+          "value": "BrighterScript",
+          "title": "BrighterScript"
+        },
+        {
+          "value": "Brightscript",
+          "title": "Brightscript"
+        },
+        {
+          "value": "Browserslist",
+          "title": "Browserslist"
+        },
+        {
+          "value": "C",
+          "title": "C"
+        },
+        {
+          "value": "C#",
+          "title": "C#"
+        },
+        {
+          "value": "C++",
+          "title": "C++"
+        },
+        {
+          "value": "C-ObjDump",
+          "title": "C-ObjDump"
+        },
+        {
+          "value": "C2hs Haskell",
+          "title": "C2hs Haskell"
+        },
+        {
+          "value": "CAP CDS",
+          "title": "CAP CDS"
+        },
+        {
+          "value": "CIL",
+          "title": "CIL"
+        },
+        {
+          "value": "CLIPS",
+          "title": "CLIPS"
+        },
+        {
+          "value": "CMake",
+          "title": "CMake"
+        },
+        {
+          "value": "COBOL",
+          "title": "COBOL"
+        },
+        {
+          "value": "CODEOWNERS",
+          "title": "CODEOWNERS"
+        },
+        {
+          "value": "COLLADA",
+          "title": "COLLADA"
+        },
+        {
+          "value": "CSON",
+          "title": "CSON"
+        },
+        {
+          "value": "CSS",
+          "title": "CSS"
+        },
+        {
+          "value": "CSV",
+          "title": "CSV"
+        },
+        {
+          "value": "CUE",
+          "title": "CUE"
+        },
+        {
+          "value": "CWeb",
+          "title": "CWeb"
+        },
+        {
+          "value": "Cabal Config",
+          "title": "Cabal Config"
+        },
+        {
+          "value": "Cadence",
+          "title": "Cadence"
+        },
+        {
+          "value": "Cairo",
+          "title": "Cairo"
+        },
+        {
+          "value": "CameLIGO",
+          "title": "CameLIGO"
+        },
+        {
+          "value": "Cap'n Proto",
+          "title": "Cap'n Proto"
+        },
+        {
+          "value": "CartoCSS",
+          "title": "CartoCSS"
+        },
+        {
+          "value": "Ceylon",
+          "title": "Ceylon"
+        },
+        {
+          "value": "Chapel",
+          "title": "Chapel"
+        },
+        {
+          "value": "Charity",
+          "title": "Charity"
+        },
+        {
+          "value": "Checksums",
+          "title": "Checksums"
+        },
+        {
+          "value": "ChucK",
+          "title": "ChucK"
+        },
+        {
+          "value": "Circom",
+          "title": "Circom"
+        },
+        {
+          "value": "Cirru",
+          "title": "Cirru"
+        },
+        {
+          "value": "Clarion",
+          "title": "Clarion"
+        },
+        {
+          "value": "Clarity",
+          "title": "Clarity"
+        },
+        {
+          "value": "Classic ASP",
+          "title": "Classic ASP"
+        },
+        {
+          "value": "Clean",
+          "title": "Clean"
+        },
+        {
+          "value": "Click",
+          "title": "Click"
+        },
+        {
+          "value": "Clojure",
+          "title": "Clojure"
+        },
+        {
+          "value": "Closure Templates",
+          "title": "Closure Templates"
+        },
+        {
+          "value": "Cloud Firestore Security Rules",
+          "title": "Cloud Firestore Security Rules"
+        },
+        {
+          "value": "CoNLL-U",
+          "title": "CoNLL-U"
+        },
+        {
+          "value": "CodeQL",
+          "title": "CodeQL"
+        },
+        {
+          "value": "CoffeeScript",
+          "title": "CoffeeScript"
+        },
+        {
+          "value": "ColdFusion CFC",
+          "title": "ColdFusion CFC"
+        },
+        {
+          "value": "ColdFusion",
+          "title": "ColdFusion"
+        },
+        {
+          "value": "Common Lisp",
+          "title": "Common Lisp"
+        },
+        {
+          "value": "Common Workflow Language",
+          "title": "Common Workflow Language"
+        },
+        {
+          "value": "Component Pascal",
+          "title": "Component Pascal"
+        },
+        {
+          "value": "Cool",
+          "title": "Cool"
+        },
+        {
+          "value": "Coq",
+          "title": "Coq"
+        },
+        {
+          "value": "Cpp-ObjDump",
+          "title": "Cpp-ObjDump"
+        },
+        {
+          "value": "Creole",
+          "title": "Creole"
+        },
+        {
+          "value": "Crystal",
+          "title": "Crystal"
+        },
+        {
+          "value": "Csound Document",
+          "title": "Csound Document"
+        },
+        {
+          "value": "Csound Score",
+          "title": "Csound Score"
+        },
+        {
+          "value": "Csound",
+          "title": "Csound"
+        },
+        {
+          "value": "Cuda",
+          "title": "Cuda"
+        },
+        {
+          "value": "Cue Sheet",
+          "title": "Cue Sheet"
+        },
+        {
+          "value": "Curry",
+          "title": "Curry"
+        },
+        {
+          "value": "Cycript",
+          "title": "Cycript"
+        },
+        {
+          "value": "Cypher",
+          "title": "Cypher"
+        },
+        {
+          "value": "Cython",
+          "title": "Cython"
+        },
+        {
+          "value": "D",
+          "title": "D"
+        },
+        {
+          "value": "D-ObjDump",
+          "title": "D-ObjDump"
+        },
+        {
+          "value": "DIGITAL Command Language",
+          "title": "DIGITAL Command Language"
+        },
+        {
+          "value": "DM",
+          "title": "DM"
+        },
+        {
+          "value": "DNS Zone",
+          "title": "DNS Zone"
+        },
+        {
+          "value": "DTrace",
+          "title": "DTrace"
+        },
+        {
+          "value": "Dafny",
+          "title": "Dafny"
+        },
+        {
+          "value": "Darcs Patch",
+          "title": "Darcs Patch"
+        },
+        {
+          "value": "Dart",
+          "title": "Dart"
+        },
+        {
+          "value": "DataWeave",
+          "title": "DataWeave"
+        },
+        {
+          "value": "Debian Package Control File",
+          "title": "Debian Package Control File"
+        },
+        {
+          "value": "DenizenScript",
+          "title": "DenizenScript"
+        },
+        {
+          "value": "Dhall",
+          "title": "Dhall"
+        },
+        {
+          "value": "Diff",
+          "title": "Diff"
+        },
+        {
+          "value": "DirectX 3D File",
+          "title": "DirectX 3D File"
+        },
+        {
+          "value": "Dockerfile",
+          "title": "Dockerfile"
+        },
+        {
+          "value": "Dogescript",
+          "title": "Dogescript"
+        },
+        {
+          "value": "Dotenv",
+          "title": "Dotenv"
+        },
+        {
+          "value": "Dylan",
+          "title": "Dylan"
+        },
+        {
+          "value": "E",
+          "title": "E"
+        },
+        {
+          "value": "E-mail",
+          "title": "E-mail"
+        },
+        {
+          "value": "EBNF",
+          "title": "EBNF"
+        },
+        {
+          "value": "ECL",
+          "title": "ECL"
+        },
+        {
+          "value": "ECLiPSe",
+          "title": "ECLiPSe"
+        },
+        {
+          "value": "EJS",
+          "title": "EJS"
+        },
+        {
+          "value": "EQ",
+          "title": "EQ"
+        },
+        {
+          "value": "Eagle",
+          "title": "Eagle"
+        },
+        {
+          "value": "Earthly",
+          "title": "Earthly"
+        },
+        {
+          "value": "Easybuild",
+          "title": "Easybuild"
+        },
+        {
+          "value": "Ecere Projects",
+          "title": "Ecere Projects"
+        },
+        {
+          "value": "Ecmarkup",
+          "title": "Ecmarkup"
+        },
+        {
+          "value": "EditorConfig",
+          "title": "EditorConfig"
+        },
+        {
+          "value": "Edje Data Collection",
+          "title": "Edje Data Collection"
+        },
+        {
+          "value": "Eiffel",
+          "title": "Eiffel"
+        },
+        {
+          "value": "Elixir",
+          "title": "Elixir"
+        },
+        {
+          "value": "Elm",
+          "title": "Elm"
+        },
+        {
+          "value": "Elvish Transcript",
+          "title": "Elvish Transcript"
+        },
+        {
+          "value": "Elvish",
+          "title": "Elvish"
+        },
+        {
+          "value": "Emacs Lisp",
+          "title": "Emacs Lisp"
+        },
+        {
+          "value": "EmberScript",
+          "title": "EmberScript"
+        },
+        {
+          "value": "Erlang",
+          "title": "Erlang"
+        },
+        {
+          "value": "Euphoria",
+          "title": "Euphoria"
+        },
+        {
+          "value": "F#",
+          "title": "F#"
+        },
+        {
+          "value": "F*",
+          "title": "F*"
+        },
+        {
+          "value": "FIGlet Font",
+          "title": "FIGlet Font"
+        },
+        {
+          "value": "FLUX",
+          "title": "FLUX"
+        },
+        {
+          "value": "Factor",
+          "title": "Factor"
+        },
+        {
+          "value": "Fancy",
+          "title": "Fancy"
+        },
+        {
+          "value": "Fantom",
+          "title": "Fantom"
+        },
+        {
+          "value": "Faust",
+          "title": "Faust"
+        },
+        {
+          "value": "Fennel",
+          "title": "Fennel"
+        },
+        {
+          "value": "Filebench WML",
+          "title": "Filebench WML"
+        },
+        {
+          "value": "Filterscript",
+          "title": "Filterscript"
+        },
+        {
+          "value": "Fluent",
+          "title": "Fluent"
+        },
+        {
+          "value": "Formatted",
+          "title": "Formatted"
+        },
+        {
+          "value": "Forth",
+          "title": "Forth"
+        },
+        {
+          "value": "Fortran Free Form",
+          "title": "Fortran Free Form"
+        },
+        {
+          "value": "Fortran",
+          "title": "Fortran"
+        },
+        {
+          "value": "FreeBasic",
+          "title": "FreeBasic"
+        },
+        {
+          "value": "FreeMarker",
+          "title": "FreeMarker"
+        },
+        {
+          "value": "Frege",
+          "title": "Frege"
+        },
+        {
+          "value": "Futhark",
+          "title": "Futhark"
+        },
+        {
+          "value": "G-code",
+          "title": "G-code"
+        },
+        {
+          "value": "GAML",
+          "title": "GAML"
+        },
+        {
+          "value": "GAMS",
+          "title": "GAMS"
+        },
+        {
+          "value": "GAP",
+          "title": "GAP"
+        },
+        {
+          "value": "GCC Machine Description",
+          "title": "GCC Machine Description"
+        },
+        {
+          "value": "GDB",
+          "title": "GDB"
+        },
+        {
+          "value": "GDScript",
+          "title": "GDScript"
+        },
+        {
+          "value": "GEDCOM",
+          "title": "GEDCOM"
+        },
+        {
+          "value": "GLSL",
+          "title": "GLSL"
+        },
+        {
+          "value": "GN",
+          "title": "GN"
+        },
+        {
+          "value": "GSC",
+          "title": "GSC"
+        },
+        {
+          "value": "Game Maker Language",
+          "title": "Game Maker Language"
+        },
+        {
+          "value": "Gemfile.lock",
+          "title": "Gemfile.lock"
+        },
+        {
+          "value": "Gemini",
+          "title": "Gemini"
+        },
+        {
+          "value": "Genero Forms",
+          "title": "Genero Forms"
+        },
+        {
+          "value": "Genero",
+          "title": "Genero"
+        },
+        {
+          "value": "Genie",
+          "title": "Genie"
+        },
+        {
+          "value": "Genshi",
+          "title": "Genshi"
+        },
+        {
+          "value": "Gentoo Ebuild",
+          "title": "Gentoo Ebuild"
+        },
+        {
+          "value": "Gentoo Eclass",
+          "title": "Gentoo Eclass"
+        },
+        {
+          "value": "Gerber Image",
+          "title": "Gerber Image"
+        },
+        {
+          "value": "Gettext Catalog",
+          "title": "Gettext Catalog"
+        },
+        {
+          "value": "Gherkin",
+          "title": "Gherkin"
+        },
+        {
+          "value": "Git Attributes",
+          "title": "Git Attributes"
+        },
+        {
+          "value": "Git Config",
+          "title": "Git Config"
+        },
+        {
+          "value": "Git Revision List",
+          "title": "Git Revision List"
+        },
+        {
+          "value": "Gleam",
+          "title": "Gleam"
+        },
+        {
+          "value": "Glyph Bitmap Distribution Format",
+          "title": "Glyph Bitmap Distribution Format"
+        },
+        {
+          "value": "Glyph",
+          "title": "Glyph"
+        },
+        {
+          "value": "Gnuplot",
+          "title": "Gnuplot"
+        },
+        {
+          "value": "Go Checksums",
+          "title": "Go Checksums"
+        },
+        {
+          "value": "Go Module",
+          "title": "Go Module"
+        },
+        {
+          "value": "Go",
+          "title": "Go"
+        },
+        {
+          "value": "Godot Resource",
+          "title": "Godot Resource"
+        },
+        {
+          "value": "Golo",
+          "title": "Golo"
+        },
+        {
+          "value": "Gosu",
+          "title": "Gosu"
+        },
+        {
+          "value": "Grace",
+          "title": "Grace"
+        },
+        {
+          "value": "Gradle",
+          "title": "Gradle"
+        },
+        {
+          "value": "Grammatical Framework",
+          "title": "Grammatical Framework"
+        },
+        {
+          "value": "Graph Modeling Language",
+          "title": "Graph Modeling Language"
+        },
+        {
+          "value": "GraphQL",
+          "title": "GraphQL"
+        },
+        {
+          "value": "Graphviz (DOT)",
+          "title": "Graphviz (DOT)"
+        },
+        {
+          "value": "Groovy Server Pages",
+          "title": "Groovy Server Pages"
+        },
+        {
+          "value": "Groovy",
+          "title": "Groovy"
+        },
+        {
+          "value": "HAProxy",
+          "title": "HAProxy"
+        },
+        {
+          "value": "HCL",
+          "title": "HCL"
+        },
+        {
+          "value": "HLSL",
+          "title": "HLSL"
+        },
+        {
+          "value": "HOCON",
+          "title": "HOCON"
+        },
+        {
+          "value": "HTML",
+          "title": "HTML"
+        },
+        {
+          "value": "HTML+ECR",
+          "title": "HTML+ECR"
+        },
+        {
+          "value": "HTML+EEX",
+          "title": "HTML+EEX"
+        },
+        {
+          "value": "HTML+ERB",
+          "title": "HTML+ERB"
+        },
+        {
+          "value": "HTML+PHP",
+          "title": "HTML+PHP"
+        },
+        {
+          "value": "HTML+Razor",
+          "title": "HTML+Razor"
+        },
+        {
+          "value": "HTTP",
+          "title": "HTTP"
+        },
+        {
+          "value": "HXML",
+          "title": "HXML"
+        },
+        {
+          "value": "Hack",
+          "title": "Hack"
+        },
+        {
+          "value": "Haml",
+          "title": "Haml"
+        },
+        {
+          "value": "Handlebars",
+          "title": "Handlebars"
+        },
+        {
+          "value": "Harbour",
+          "title": "Harbour"
+        },
+        {
+          "value": "Haskell",
+          "title": "Haskell"
+        },
+        {
+          "value": "Haxe",
+          "title": "Haxe"
+        },
+        {
+          "value": "HiveQL",
+          "title": "HiveQL"
+        },
+        {
+          "value": "HolyC",
+          "title": "HolyC"
+        },
+        {
+          "value": "Hy",
+          "title": "Hy"
+        },
+        {
+          "value": "HyPhy",
+          "title": "HyPhy"
+        },
+        {
+          "value": "IDL",
+          "title": "IDL"
+        },
+        {
+          "value": "IGOR Pro",
+          "title": "IGOR Pro"
+        },
+        {
+          "value": "INI",
+          "title": "INI"
+        },
+        {
+          "value": "IRC log",
+          "title": "IRC log"
+        },
+        {
+          "value": "Idris",
+          "title": "Idris"
+        },
+        {
+          "value": "Ignore List",
+          "title": "Ignore List"
+        },
+        {
+          "value": "ImageJ Macro",
+          "title": "ImageJ Macro"
+        },
+        {
+          "value": "Imba",
+          "title": "Imba"
+        },
+        {
+          "value": "Inform 7",
+          "title": "Inform 7"
+        },
+        {
+          "value": "Ink",
+          "title": "Ink"
+        },
+        {
+          "value": "Inno Setup",
+          "title": "Inno Setup"
+        },
+        {
+          "value": "Io",
+          "title": "Io"
+        },
+        {
+          "value": "Ioke",
+          "title": "Ioke"
+        },
+        {
+          "value": "Isabelle ROOT",
+          "title": "Isabelle ROOT"
+        },
+        {
+          "value": "Isabelle",
+          "title": "Isabelle"
+        },
+        {
+          "value": "J",
+          "title": "J"
+        },
+        {
+          "value": "JAR Manifest",
+          "title": "JAR Manifest"
+        },
+        {
+          "value": "JCL",
+          "title": "JCL"
+        },
+        {
+          "value": "JFlex",
+          "title": "JFlex"
+        },
+        {
+          "value": "JSON with Comments",
+          "title": "JSON with Comments"
+        },
+        {
+          "value": "JSON",
+          "title": "JSON"
+        },
+        {
+          "value": "JSON5",
+          "title": "JSON5"
+        },
+        {
+          "value": "JSONLD",
+          "title": "JSONLD"
+        },
+        {
+          "value": "JSONiq",
+          "title": "JSONiq"
+        },
+        {
+          "value": "Janet",
+          "title": "Janet"
+        },
+        {
+          "value": "Jasmin",
+          "title": "Jasmin"
+        },
+        {
+          "value": "Java Properties",
+          "title": "Java Properties"
+        },
+        {
+          "value": "Java Server Pages",
+          "title": "Java Server Pages"
+        },
+        {
+          "value": "Java",
+          "title": "Java"
+        },
+        {
+          "value": "JavaScript",
+          "title": "JavaScript"
+        },
+        {
+          "value": "JavaScript+ERB",
+          "title": "JavaScript+ERB"
+        },
+        {
+          "value": "Jest Snapshot",
+          "title": "Jest Snapshot"
+        },
+        {
+          "value": "JetBrains MPS",
+          "title": "JetBrains MPS"
+        },
+        {
+          "value": "Jinja",
+          "title": "Jinja"
+        },
+        {
+          "value": "Jison Lex",
+          "title": "Jison Lex"
+        },
+        {
+          "value": "Jison",
+          "title": "Jison"
+        },
+        {
+          "value": "Jolie",
+          "title": "Jolie"
+        },
+        {
+          "value": "Jsonnet",
+          "title": "Jsonnet"
+        },
+        {
+          "value": "Julia",
+          "title": "Julia"
+        },
+        {
+          "value": "Jupyter Notebook",
+          "title": "Jupyter Notebook"
+        },
+        {
+          "value": "Just",
+          "title": "Just"
+        },
+        {
+          "value": "KRL",
+          "title": "KRL"
+        },
+        {
+          "value": "Kaitai Struct",
+          "title": "Kaitai Struct"
+        },
+        {
+          "value": "KakouneScript",
+          "title": "KakouneScript"
+        },
+        {
+          "value": "KerboScript",
+          "title": "KerboScript"
+        },
+        {
+          "value": "KiCad Layout",
+          "title": "KiCad Layout"
+        },
+        {
+          "value": "KiCad Legacy Layout",
+          "title": "KiCad Legacy Layout"
+        },
+        {
+          "value": "KiCad Schematic",
+          "title": "KiCad Schematic"
+        },
+        {
+          "value": "Kickstart",
+          "title": "Kickstart"
+        },
+        {
+          "value": "Kit",
+          "title": "Kit"
+        },
+        {
+          "value": "Kotlin",
+          "title": "Kotlin"
+        },
+        {
+          "value": "Kusto",
+          "title": "Kusto"
+        },
+        {
+          "value": "LFE",
+          "title": "LFE"
+        },
+        {
+          "value": "LLVM",
+          "title": "LLVM"
+        },
+        {
+          "value": "LOLCODE",
+          "title": "LOLCODE"
+        },
+        {
+          "value": "LSL",
+          "title": "LSL"
+        },
+        {
+          "value": "LTspice Symbol",
+          "title": "LTspice Symbol"
+        },
+        {
+          "value": "LabVIEW",
+          "title": "LabVIEW"
+        },
+        {
+          "value": "Lark",
+          "title": "Lark"
+        },
+        {
+          "value": "Lasso",
+          "title": "Lasso"
+        },
+        {
+          "value": "Latte",
+          "title": "Latte"
+        },
+        {
+          "value": "Lean",
+          "title": "Lean"
+        },
+        {
+          "value": "Less",
+          "title": "Less"
+        },
+        {
+          "value": "Lex",
+          "title": "Lex"
+        },
+        {
+          "value": "LigoLANG",
+          "title": "LigoLANG"
+        },
+        {
+          "value": "LilyPond",
+          "title": "LilyPond"
+        },
+        {
+          "value": "Limbo",
+          "title": "Limbo"
+        },
+        {
+          "value": "Linker Script",
+          "title": "Linker Script"
+        },
+        {
+          "value": "Linux Kernel Module",
+          "title": "Linux Kernel Module"
+        },
+        {
+          "value": "Liquid",
+          "title": "Liquid"
+        },
+        {
+          "value": "Literate Agda",
+          "title": "Literate Agda"
+        },
+        {
+          "value": "Literate CoffeeScript",
+          "title": "Literate CoffeeScript"
+        },
+        {
+          "value": "Literate Haskell",
+          "title": "Literate Haskell"
+        },
+        {
+          "value": "LiveScript",
+          "title": "LiveScript"
+        },
+        {
+          "value": "Logos",
+          "title": "Logos"
+        },
+        {
+          "value": "Logtalk",
+          "title": "Logtalk"
+        },
+        {
+          "value": "LookML",
+          "title": "LookML"
+        },
+        {
+          "value": "LoomScript",
+          "title": "LoomScript"
+        },
+        {
+          "value": "Lua",
+          "title": "Lua"
+        },
+        {
+          "value": "M",
+          "title": "M"
+        },
+        {
+          "value": "M4",
+          "title": "M4"
+        },
+        {
+          "value": "M4Sugar",
+          "title": "M4Sugar"
+        },
+        {
+          "value": "MATLAB",
+          "title": "MATLAB"
+        },
+        {
+          "value": "MAXScript",
+          "title": "MAXScript"
+        },
+        {
+          "value": "MLIR",
+          "title": "MLIR"
+        },
+        {
+          "value": "MQL4",
+          "title": "MQL4"
+        },
+        {
+          "value": "MQL5",
+          "title": "MQL5"
+        },
+        {
+          "value": "MTML",
+          "title": "MTML"
+        },
+        {
+          "value": "MUF",
+          "title": "MUF"
+        },
+        {
+          "value": "Macaulay2",
+          "title": "Macaulay2"
+        },
+        {
+          "value": "Makefile",
+          "title": "Makefile"
+        },
+        {
+          "value": "Mako",
+          "title": "Mako"
+        },
+        {
+          "value": "Markdown",
+          "title": "Markdown"
+        },
+        {
+          "value": "Marko",
+          "title": "Marko"
+        },
+        {
+          "value": "Mask",
+          "title": "Mask"
+        },
+        {
+          "value": "Mathematica",
+          "title": "Mathematica"
+        },
+        {
+          "value": "Maven POM",
+          "title": "Maven POM"
+        },
+        {
+          "value": "Max",
+          "title": "Max"
+        },
+        {
+          "value": "Mercury",
+          "title": "Mercury"
+        },
+        {
+          "value": "Mermaid",
+          "title": "Mermaid"
+        },
+        {
+          "value": "Meson",
+          "title": "Meson"
+        },
+        {
+          "value": "Metal",
+          "title": "Metal"
+        },
+        {
+          "value": "Microsoft Developer Studio Project",
+          "title": "Microsoft Developer Studio Project"
+        },
+        {
+          "value": "Microsoft Visual Studio Solution",
+          "title": "Microsoft Visual Studio Solution"
+        },
+        {
+          "value": "MiniD",
+          "title": "MiniD"
+        },
+        {
+          "value": "MiniYAML",
+          "title": "MiniYAML"
+        },
+        {
+          "value": "Mint",
+          "title": "Mint"
+        },
+        {
+          "value": "Mirah",
+          "title": "Mirah"
+        },
+        {
+          "value": "Modelica",
+          "title": "Modelica"
+        },
+        {
+          "value": "Modula-2",
+          "title": "Modula-2"
+        },
+        {
+          "value": "Modula-3",
+          "title": "Modula-3"
+        },
+        {
+          "value": "Module Management System",
+          "title": "Module Management System"
+        },
+        {
+          "value": "Monkey C",
+          "title": "Monkey C"
+        },
+        {
+          "value": "Monkey",
+          "title": "Monkey"
+        },
+        {
+          "value": "Moocode",
+          "title": "Moocode"
+        },
+        {
+          "value": "MoonScript",
+          "title": "MoonScript"
+        },
+        {
+          "value": "Motoko",
+          "title": "Motoko"
+        },
+        {
+          "value": "Motorola 68K Assembly",
+          "title": "Motorola 68K Assembly"
+        },
+        {
+          "value": "Move",
+          "title": "Move"
+        },
+        {
+          "value": "Muse",
+          "title": "Muse"
+        },
+        {
+          "value": "Mustache",
+          "title": "Mustache"
+        },
+        {
+          "value": "Myghty",
+          "title": "Myghty"
+        },
+        {
+          "value": "NASL",
+          "title": "NASL"
+        },
+        {
+          "value": "NCL",
+          "title": "NCL"
+        },
+        {
+          "value": "NEON",
+          "title": "NEON"
+        },
+        {
+          "value": "NL",
+          "title": "NL"
+        },
+        {
+          "value": "NPM Config",
+          "title": "NPM Config"
+        },
+        {
+          "value": "NSIS",
+          "title": "NSIS"
+        },
+        {
+          "value": "NWScript",
+          "title": "NWScript"
+        },
+        {
+          "value": "Nasal",
+          "title": "Nasal"
+        },
+        {
+          "value": "Nearley",
+          "title": "Nearley"
+        },
+        {
+          "value": "Nemerle",
+          "title": "Nemerle"
+        },
+        {
+          "value": "NetLinx",
+          "title": "NetLinx"
+        },
+        {
+          "value": "NetLinx+ERB",
+          "title": "NetLinx+ERB"
+        },
+        {
+          "value": "NetLogo",
+          "title": "NetLogo"
+        },
+        {
+          "value": "NewLisp",
+          "title": "NewLisp"
+        },
+        {
+          "value": "Nextflow",
+          "title": "Nextflow"
+        },
+        {
+          "value": "Nginx",
+          "title": "Nginx"
+        },
+        {
+          "value": "Nim",
+          "title": "Nim"
+        },
+        {
+          "value": "Ninja",
+          "title": "Ninja"
+        },
+        {
+          "value": "Nit",
+          "title": "Nit"
+        },
+        {
+          "value": "Nix",
+          "title": "Nix"
+        },
+        {
+          "value": "Nu",
+          "title": "Nu"
+        },
+        {
+          "value": "NumPy",
+          "title": "NumPy"
+        },
+        {
+          "value": "Nunjucks",
+          "title": "Nunjucks"
+        },
+        {
+          "value": "OASv2-json",
+          "title": "OASv2-json"
+        },
+        {
+          "value": "OASv2-yaml",
+          "title": "OASv2-yaml"
+        },
+        {
+          "value": "OASv3-json",
+          "title": "OASv3-json"
+        },
+        {
+          "value": "OASv3-yaml",
+          "title": "OASv3-yaml"
+        },
+        {
+          "value": "OCaml",
+          "title": "OCaml"
+        },
+        {
+          "value": "ObjDump",
+          "title": "ObjDump"
+        },
+        {
+          "value": "Object Data Instance Notation",
+          "title": "Object Data Instance Notation"
+        },
+        {
+          "value": "ObjectScript",
+          "title": "ObjectScript"
+        },
+        {
+          "value": "Objective-C",
+          "title": "Objective-C"
+        },
+        {
+          "value": "Objective-C++",
+          "title": "Objective-C++"
+        },
+        {
+          "value": "Objective-J",
+          "title": "Objective-J"
+        },
+        {
+          "value": "Odin",
+          "title": "Odin"
+        },
+        {
+          "value": "Omgrofl",
+          "title": "Omgrofl"
+        },
+        {
+          "value": "Opa",
+          "title": "Opa"
+        },
+        {
+          "value": "Opal",
+          "title": "Opal"
+        },
+        {
+          "value": "Open Policy Agent",
+          "title": "Open Policy Agent"
+        },
+        {
+          "value": "OpenAPI Specification v2",
+          "title": "OpenAPI Specification v2"
+        },
+        {
+          "value": "OpenAPI Specification v3",
+          "title": "OpenAPI Specification v3"
+        },
+        {
+          "value": "OpenCL",
+          "title": "OpenCL"
+        },
+        {
+          "value": "OpenEdge ABL",
+          "title": "OpenEdge ABL"
+        },
+        {
+          "value": "OpenQASM",
+          "title": "OpenQASM"
+        },
+        {
+          "value": "OpenRC runscript",
+          "title": "OpenRC runscript"
+        },
+        {
+          "value": "OpenSCAD",
+          "title": "OpenSCAD"
+        },
+        {
+          "value": "OpenStep Property List",
+          "title": "OpenStep Property List"
+        },
+        {
+          "value": "OpenType Feature File",
+          "title": "OpenType Feature File"
+        },
+        {
+          "value": "Option List",
+          "title": "Option List"
+        },
+        {
+          "value": "Org",
+          "title": "Org"
+        },
+        {
+          "value": "Ox",
+          "title": "Ox"
+        },
+        {
+          "value": "Oxygene",
+          "title": "Oxygene"
+        },
+        {
+          "value": "Oz",
+          "title": "Oz"
+        },
+        {
+          "value": "P4",
+          "title": "P4"
+        },
+        {
+          "value": "PDDL",
+          "title": "PDDL"
+        },
+        {
+          "value": "PEG.js",
+          "title": "PEG.js"
+        },
+        {
+          "value": "PHP",
+          "title": "PHP"
+        },
+        {
+          "value": "PLSQL",
+          "title": "PLSQL"
+        },
+        {
+          "value": "PLpgSQL",
+          "title": "PLpgSQL"
+        },
+        {
+          "value": "POV-Ray SDL",
+          "title": "POV-Ray SDL"
+        },
+        {
+          "value": "Pan",
+          "title": "Pan"
+        },
+        {
+          "value": "Papyrus",
+          "title": "Papyrus"
+        },
+        {
+          "value": "Parrot Assembly",
+          "title": "Parrot Assembly"
+        },
+        {
+          "value": "Parrot Internal Representation",
+          "title": "Parrot Internal Representation"
+        },
+        {
+          "value": "Parrot",
+          "title": "Parrot"
+        },
+        {
+          "value": "Pascal",
+          "title": "Pascal"
+        },
+        {
+          "value": "Pawn",
+          "title": "Pawn"
+        },
+        {
+          "value": "Pep8",
+          "title": "Pep8"
+        },
+        {
+          "value": "Perl",
+          "title": "Perl"
+        },
+        {
+          "value": "Pic",
+          "title": "Pic"
+        },
+        {
+          "value": "Pickle",
+          "title": "Pickle"
+        },
+        {
+          "value": "PicoLisp",
+          "title": "PicoLisp"
+        },
+        {
+          "value": "PigLatin",
+          "title": "PigLatin"
+        },
+        {
+          "value": "Pike",
+          "title": "Pike"
+        },
+        {
+          "value": "PlantUML",
+          "title": "PlantUML"
+        },
+        {
+          "value": "Pod 6",
+          "title": "Pod 6"
+        },
+        {
+          "value": "Pod",
+          "title": "Pod"
+        },
+        {
+          "value": "PogoScript",
+          "title": "PogoScript"
+        },
+        {
+          "value": "Polar",
+          "title": "Polar"
+        },
+        {
+          "value": "Pony",
+          "title": "Pony"
+        },
+        {
+          "value": "Portugol",
+          "title": "Portugol"
+        },
+        {
+          "value": "PostCSS",
+          "title": "PostCSS"
+        },
+        {
+          "value": "PostScript",
+          "title": "PostScript"
+        },
+        {
+          "value": "PowerBuilder",
+          "title": "PowerBuilder"
+        },
+        {
+          "value": "PowerShell",
+          "title": "PowerShell"
+        },
+        {
+          "value": "Prisma",
+          "title": "Prisma"
+        },
+        {
+          "value": "Processing",
+          "title": "Processing"
+        },
+        {
+          "value": "Procfile",
+          "title": "Procfile"
+        },
+        {
+          "value": "Proguard",
+          "title": "Proguard"
+        },
+        {
+          "value": "Prolog",
+          "title": "Prolog"
+        },
+        {
+          "value": "Promela",
+          "title": "Promela"
+        },
+        {
+          "value": "Propeller Spin",
+          "title": "Propeller Spin"
+        },
+        {
+          "value": "Protocol Buffer Text Format",
+          "title": "Protocol Buffer Text Format"
+        },
+        {
+          "value": "Protocol Buffer",
+          "title": "Protocol Buffer"
+        },
+        {
+          "value": "Public Key",
+          "title": "Public Key"
+        },
+        {
+          "value": "Pug",
+          "title": "Pug"
+        },
+        {
+          "value": "Puppet",
+          "title": "Puppet"
+        },
+        {
+          "value": "Pure Data",
+          "title": "Pure Data"
+        },
+        {
+          "value": "PureBasic",
+          "title": "PureBasic"
+        },
+        {
+          "value": "PureScript",
+          "title": "PureScript"
+        },
+        {
+          "value": "Pyret",
+          "title": "Pyret"
+        },
+        {
+          "value": "Python console",
+          "title": "Python console"
+        },
+        {
+          "value": "Python traceback",
+          "title": "Python traceback"
+        },
+        {
+          "value": "Python",
+          "title": "Python"
+        },
+        {
+          "value": "Q#",
+          "title": "Q#"
+        },
+        {
+          "value": "QML",
+          "title": "QML"
+        },
+        {
+          "value": "QMake",
+          "title": "QMake"
+        },
+        {
+          "value": "Qt Script",
+          "title": "Qt Script"
+        },
+        {
+          "value": "Quake",
+          "title": "Quake"
+        },
+        {
+          "value": "R",
+          "title": "R"
+        },
+        {
+          "value": "RAML",
+          "title": "RAML"
+        },
+        {
+          "value": "RDoc",
+          "title": "RDoc"
+        },
+        {
+          "value": "REALbasic",
+          "title": "REALbasic"
+        },
+        {
+          "value": "REXX",
+          "title": "REXX"
+        },
+        {
+          "value": "RMarkdown",
+          "title": "RMarkdown"
+        },
+        {
+          "value": "RPC",
+          "title": "RPC"
+        },
+        {
+          "value": "RPGLE",
+          "title": "RPGLE"
+        },
+        {
+          "value": "RPM Spec",
+          "title": "RPM Spec"
+        },
+        {
+          "value": "RUNOFF",
+          "title": "RUNOFF"
+        },
+        {
+          "value": "Racket",
+          "title": "Racket"
+        },
+        {
+          "value": "Ragel",
+          "title": "Ragel"
+        },
+        {
+          "value": "Raku",
+          "title": "Raku"
+        },
+        {
+          "value": "Rascal",
+          "title": "Rascal"
+        },
+        {
+          "value": "Raw token data",
+          "title": "Raw token data"
+        },
+        {
+          "value": "ReScript",
+          "title": "ReScript"
+        },
+        {
+          "value": "Readline Config",
+          "title": "Readline Config"
+        },
+        {
+          "value": "Reason",
+          "title": "Reason"
+        },
+        {
+          "value": "ReasonLIGO",
+          "title": "ReasonLIGO"
+        },
+        {
+          "value": "Rebol",
+          "title": "Rebol"
+        },
+        {
+          "value": "Record Jar",
+          "title": "Record Jar"
+        },
+        {
+          "value": "Red",
+          "title": "Red"
+        },
+        {
+          "value": "Redcode",
+          "title": "Redcode"
+        },
+        {
+          "value": "Redirect Rules",
+          "title": "Redirect Rules"
+        },
+        {
+          "value": "Regular Expression",
+          "title": "Regular Expression"
+        },
+        {
+          "value": "Ren'Py",
+          "title": "Ren'Py"
+        },
+        {
+          "value": "RenderScript",
+          "title": "RenderScript"
+        },
+        {
+          "value": "Rich Text Format",
+          "title": "Rich Text Format"
+        },
+        {
+          "value": "Ring",
+          "title": "Ring"
+        },
+        {
+          "value": "Riot",
+          "title": "Riot"
+        },
+        {
+          "value": "RobotFramework",
+          "title": "RobotFramework"
+        },
+        {
+          "value": "Roff Manpage",
+          "title": "Roff Manpage"
+        },
+        {
+          "value": "Roff",
+          "title": "Roff"
+        },
+        {
+          "value": "Rouge",
+          "title": "Rouge"
+        },
+        {
+          "value": "RouterOS Script",
+          "title": "RouterOS Script"
+        },
+        {
+          "value": "Ruby",
+          "title": "Ruby"
+        },
+        {
+          "value": "Rust",
+          "title": "Rust"
+        },
+        {
+          "value": "SAS",
+          "title": "SAS"
+        },
+        {
+          "value": "SCSS",
+          "title": "SCSS"
+        },
+        {
+          "value": "SELinux Policy",
+          "title": "SELinux Policy"
+        },
+        {
+          "value": "SMT",
+          "title": "SMT"
+        },
+        {
+          "value": "SPARQL",
+          "title": "SPARQL"
+        },
+        {
+          "value": "SQF",
+          "title": "SQF"
+        },
+        {
+          "value": "SQL",
+          "title": "SQL"
+        },
+        {
+          "value": "SQLPL",
+          "title": "SQLPL"
+        },
+        {
+          "value": "SRecode Template",
+          "title": "SRecode Template"
+        },
+        {
+          "value": "SSH Config",
+          "title": "SSH Config"
+        },
+        {
+          "value": "STAR",
+          "title": "STAR"
+        },
+        {
+          "value": "STL",
+          "title": "STL"
+        },
+        {
+          "value": "STON",
+          "title": "STON"
+        },
+        {
+          "value": "SVG",
+          "title": "SVG"
+        },
+        {
+          "value": "SWIG",
+          "title": "SWIG"
+        },
+        {
+          "value": "Sage",
+          "title": "Sage"
+        },
+        {
+          "value": "SaltStack",
+          "title": "SaltStack"
+        },
+        {
+          "value": "Sass",
+          "title": "Sass"
+        },
+        {
+          "value": "Scala",
+          "title": "Scala"
+        },
+        {
+          "value": "Scaml",
+          "title": "Scaml"
+        },
+        {
+          "value": "Scenic",
+          "title": "Scenic"
+        },
+        {
+          "value": "Scheme",
+          "title": "Scheme"
+        },
+        {
+          "value": "Scilab",
+          "title": "Scilab"
+        },
+        {
+          "value": "Self",
+          "title": "Self"
+        },
+        {
+          "value": "ShaderLab",
+          "title": "ShaderLab"
+        },
+        {
+          "value": "Shell",
+          "title": "Shell"
+        },
+        {
+          "value": "ShellCheck Config",
+          "title": "ShellCheck Config"
+        },
+        {
+          "value": "ShellSession",
+          "title": "ShellSession"
+        },
+        {
+          "value": "Shen",
+          "title": "Shen"
+        },
+        {
+          "value": "Sieve",
+          "title": "Sieve"
+        },
+        {
+          "value": "Simple File Verification",
+          "title": "Simple File Verification"
+        },
+        {
+          "value": "Singularity",
+          "title": "Singularity"
+        },
+        {
+          "value": "Slash",
+          "title": "Slash"
+        },
+        {
+          "value": "Slice",
+          "title": "Slice"
+        },
+        {
+          "value": "Slim",
+          "title": "Slim"
+        },
+        {
+          "value": "SmPL",
+          "title": "SmPL"
+        },
+        {
+          "value": "Smali",
+          "title": "Smali"
+        },
+        {
+          "value": "Smalltalk",
+          "title": "Smalltalk"
+        },
+        {
+          "value": "Smarty",
+          "title": "Smarty"
+        },
+        {
+          "value": "Smithy",
+          "title": "Smithy"
+        },
+        {
+          "value": "Snakemake",
+          "title": "Snakemake"
+        },
+        {
+          "value": "Solidity",
+          "title": "Solidity"
+        },
+        {
+          "value": "Soong",
+          "title": "Soong"
+        },
+        {
+          "value": "SourcePawn",
+          "title": "SourcePawn"
+        },
+        {
+          "value": "Spline Font Database",
+          "title": "Spline Font Database"
+        },
+        {
+          "value": "Squirrel",
+          "title": "Squirrel"
+        },
+        {
+          "value": "Stan",
+          "title": "Stan"
+        },
+        {
+          "value": "Standard ML",
+          "title": "Standard ML"
+        },
+        {
+          "value": "Starlark",
+          "title": "Starlark"
+        },
+        {
+          "value": "Stata",
+          "title": "Stata"
+        },
+        {
+          "value": "StringTemplate",
+          "title": "StringTemplate"
+        },
+        {
+          "value": "Stylus",
+          "title": "Stylus"
+        },
+        {
+          "value": "SubRip Text",
+          "title": "SubRip Text"
+        },
+        {
+          "value": "SugarSS",
+          "title": "SugarSS"
+        },
+        {
+          "value": "SuperCollider",
+          "title": "SuperCollider"
+        },
+        {
+          "value": "Svelte",
+          "title": "Svelte"
+        },
+        {
+          "value": "Sway",
+          "title": "Sway"
+        },
+        {
+          "value": "Swift",
+          "title": "Swift"
+        },
+        {
+          "value": "SystemVerilog",
+          "title": "SystemVerilog"
+        },
+        {
+          "value": "TI Program",
+          "title": "TI Program"
+        },
+        {
+          "value": "TLA",
+          "title": "TLA"
+        },
+        {
+          "value": "TOML",
+          "title": "TOML"
+        },
+        {
+          "value": "TSQL",
+          "title": "TSQL"
+        },
+        {
+          "value": "TSV",
+          "title": "TSV"
+        },
+        {
+          "value": "TSX",
+          "title": "TSX"
+        },
+        {
+          "value": "TXL",
+          "title": "TXL"
+        },
+        {
+          "value": "Talon",
+          "title": "Talon"
+        },
+        {
+          "value": "Tcl",
+          "title": "Tcl"
+        },
+        {
+          "value": "Tcsh",
+          "title": "Tcsh"
+        },
+        {
+          "value": "TeX",
+          "title": "TeX"
+        },
+        {
+          "value": "Tea",
+          "title": "Tea"
+        },
+        {
+          "value": "Terra",
+          "title": "Terra"
+        },
+        {
+          "value": "Texinfo",
+          "title": "Texinfo"
+        },
+        {
+          "value": "Text",
+          "title": "Text"
+        },
+        {
+          "value": "TextMate Properties",
+          "title": "TextMate Properties"
+        },
+        {
+          "value": "Textile",
+          "title": "Textile"
+        },
+        {
+          "value": "Thrift",
+          "title": "Thrift"
+        },
+        {
+          "value": "Turing",
+          "title": "Turing"
+        },
+        {
+          "value": "Turtle",
+          "title": "Turtle"
+        },
+        {
+          "value": "Twig",
+          "title": "Twig"
+        },
+        {
+          "value": "Type Language",
+          "title": "Type Language"
+        },
+        {
+          "value": "TypeScript",
+          "title": "TypeScript"
+        },
+        {
+          "value": "Unified Parallel C",
+          "title": "Unified Parallel C"
+        },
+        {
+          "value": "Unity3D Asset",
+          "title": "Unity3D Asset"
+        },
+        {
+          "value": "Unix Assembly",
+          "title": "Unix Assembly"
+        },
+        {
+          "value": "Uno",
+          "title": "Uno"
+        },
+        {
+          "value": "UnrealScript",
+          "title": "UnrealScript"
+        },
+        {
+          "value": "UrWeb",
+          "title": "UrWeb"
+        },
+        {
+          "value": "V",
+          "title": "V"
+        },
+        {
+          "value": "VBA",
+          "title": "VBA"
+        },
+        {
+          "value": "VBScript",
+          "title": "VBScript"
+        },
+        {
+          "value": "VCL",
+          "title": "VCL"
+        },
+        {
+          "value": "VHDL",
+          "title": "VHDL"
+        },
+        {
+          "value": "Vala",
+          "title": "Vala"
+        },
+        {
+          "value": "Valve Data Format",
+          "title": "Valve Data Format"
+        },
+        {
+          "value": "Velocity Template Language",
+          "title": "Velocity Template Language"
+        },
+        {
+          "value": "Verilog",
+          "title": "Verilog"
+        },
+        {
+          "value": "Vim Help File",
+          "title": "Vim Help File"
+        },
+        {
+          "value": "Vim Script",
+          "title": "Vim Script"
+        },
+        {
+          "value": "Vim Snippet",
+          "title": "Vim Snippet"
+        },
+        {
+          "value": "Visual Basic .NET",
+          "title": "Visual Basic .NET"
+        },
+        {
+          "value": "Visual Basic 6.0",
+          "title": "Visual Basic 6.0"
+        },
+        {
+          "value": "Volt",
+          "title": "Volt"
+        },
+        {
+          "value": "Vue",
+          "title": "Vue"
+        },
+        {
+          "value": "Vyper",
+          "title": "Vyper"
+        },
+        {
+          "value": "Wavefront Material",
+          "title": "Wavefront Material"
+        },
+        {
+          "value": "Wavefront Object",
+          "title": "Wavefront Object"
+        },
+        {
+          "value": "Web Ontology Language",
+          "title": "Web Ontology Language"
+        },
+        {
+          "value": "WebAssembly",
+          "title": "WebAssembly"
+        },
+        {
+          "value": "WebIDL",
+          "title": "WebIDL"
+        },
+        {
+          "value": "WebVTT",
+          "title": "WebVTT"
+        },
+        {
+          "value": "Wget Config",
+          "title": "Wget Config"
+        },
+        {
+          "value": "Whiley",
+          "title": "Whiley"
+        },
+        {
+          "value": "Wikitext",
+          "title": "Wikitext"
+        },
+        {
+          "value": "Win32 Message File",
+          "title": "Win32 Message File"
+        },
+        {
+          "value": "Windows Registry Entries",
+          "title": "Windows Registry Entries"
+        },
+        {
+          "value": "Witcher Script",
+          "title": "Witcher Script"
+        },
+        {
+          "value": "Wollok",
+          "title": "Wollok"
+        },
+        {
+          "value": "World of Warcraft Addon Data",
+          "title": "World of Warcraft Addon Data"
+        },
+        {
+          "value": "Wren",
+          "title": "Wren"
+        },
+        {
+          "value": "X BitMap",
+          "title": "X BitMap"
+        },
+        {
+          "value": "X Font Directory Index",
+          "title": "X Font Directory Index"
+        },
+        {
+          "value": "X PixMap",
+          "title": "X PixMap"
+        },
+        {
+          "value": "X10",
+          "title": "X10"
+        },
+        {
+          "value": "XC",
+          "title": "XC"
+        },
+        {
+          "value": "XCompose",
+          "title": "XCompose"
+        },
+        {
+          "value": "XML Property List",
+          "title": "XML Property List"
+        },
+        {
+          "value": "XML",
+          "title": "XML"
+        },
+        {
+          "value": "XPages",
+          "title": "XPages"
+        },
+        {
+          "value": "XProc",
+          "title": "XProc"
+        },
+        {
+          "value": "XQuery",
+          "title": "XQuery"
+        },
+        {
+          "value": "XS",
+          "title": "XS"
+        },
+        {
+          "value": "XSLT",
+          "title": "XSLT"
+        },
+        {
+          "value": "Xojo",
+          "title": "Xojo"
+        },
+        {
+          "value": "Xonsh",
+          "title": "Xonsh"
+        },
+        {
+          "value": "Xtend",
+          "title": "Xtend"
+        },
+        {
+          "value": "YAML",
+          "title": "YAML"
+        },
+        {
+          "value": "YANG",
+          "title": "YANG"
+        },
+        {
+          "value": "YARA",
+          "title": "YARA"
+        },
+        {
+          "value": "YASnippet",
+          "title": "YASnippet"
+        },
+        {
+          "value": "Yacc",
+          "title": "Yacc"
+        },
+        {
+          "value": "Yul",
+          "title": "Yul"
+        },
+        {
+          "value": "ZAP",
+          "title": "ZAP"
+        },
+        {
+          "value": "ZIL",
+          "title": "ZIL"
+        },
+        {
+          "value": "Zeek",
+          "title": "Zeek"
+        },
+        {
+          "value": "ZenScript",
+          "title": "ZenScript"
+        },
+        {
+          "value": "Zephir",
+          "title": "Zephir"
+        },
+        {
+          "value": "Zig",
+          "title": "Zig"
+        },
+        {
+          "value": "Zimpl",
+          "title": "Zimpl"
+        },
+        {
+          "value": "cURL Config",
+          "title": "cURL Config"
+        },
+        {
+          "value": "desktop",
+          "title": "desktop"
+        },
+        {
+          "value": "dircolors",
+          "title": "dircolors"
+        },
+        {
+          "value": "eC",
+          "title": "eC"
+        },
+        {
+          "value": "edn",
+          "title": "edn"
+        },
+        {
+          "value": "fish",
+          "title": "fish"
+        },
+        {
+          "value": "hoon",
+          "title": "hoon"
+        },
+        {
+          "value": "jq",
+          "title": "jq"
+        },
+        {
+          "value": "kvlang",
+          "title": "kvlang"
+        },
+        {
+          "value": "mIRC Script",
+          "title": "mIRC Script"
+        },
+        {
+          "value": "mcfunction",
+          "title": "mcfunction"
+        },
+        {
+          "value": "mupad",
+          "title": "mupad"
+        },
+        {
+          "value": "nanorc",
+          "title": "nanorc"
+        },
+        {
+          "value": "nesC",
+          "title": "nesC"
+        },
+        {
+          "value": "ooc",
+          "title": "ooc"
+        },
+        {
+          "value": "q",
+          "title": "q"
+        },
+        {
+          "value": "reStructuredText",
+          "title": "reStructuredText"
+        },
+        {
+          "value": "robots.txt",
+          "title": "robots.txt"
+        },
+        {
+          "value": "sed",
+          "title": "sed"
+        },
+        {
+          "value": "wdl",
+          "title": "wdl"
+        },
+        {
+          "value": "wisp",
+          "title": "wisp"
+        },
+        {
+          "value": "xBase",
+          "title": "xBase"
+        }
+      ]
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.49.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "1.0.5",
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "eslint": "^7.32.0",
+    "prettier": "^2.5.1"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
